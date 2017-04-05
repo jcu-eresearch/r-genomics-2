@@ -191,8 +191,8 @@ some say things like <code>Factor w/ 30 levels</code></p>
 
 <p>You can check this by using the function <code>levels()</code>, and check the
 number of levels using <code>nlevels()</code>:</p>
-<div class="highlight"><pre><code class="language-r, purl=FALSE, eval=FALSE" data-lang="r, purl=FALSE, eval=FALSE">levels(citrate)
-nlevels(citrate)
+<div class="highlight"><pre><code class="language-r, purl=FALSE, eval=FALSE" data-lang="r, purl=FALSE, eval=FALSE">levels(metadata$cit)
+nlevels(metadata$cit)
 </code></pre></div>
 <p>Sometimes, the order of the factors does not matter, other times you might want to specify the order because it is meaningful (e.g., &quot;low&quot;, &quot;medium&quot;, &quot;high&quot;) or it is required by particular type of analysis. Additionally, specifying the order of the levels allows to compare levels:</p>
 <div class="highlight"><pre><code class="language-r, purl=FALSE, error=TRUE, eval=FALSE" data-lang="r, purl=FALSE, error=TRUE, eval=FALSE">expression &lt;- factor(c("low", "high", "medium", "high", "low", "medium", "high"))
